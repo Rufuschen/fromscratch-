@@ -1,0 +1,17 @@
+nav {
+    min-height: 60px;
+    font-family: "Montserrat";
+    border-bottom: 0.25px solid #e0e0e0;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    padding-right: 40px;
+    color: #7d7d7d;
+    font-size: 14px;
+}

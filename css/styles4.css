@@ -1,0 +1,163 @@
+.fixed {
+    position: fixed;
+    top: 0;
+}
+
+
+nav {
+    min-height: 60px;
+    font-family: "Montserrat";
+    border-bottom: 0.25px solid #e0e0e0;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style-type: none;
+
+}
+
+nav li {
+    display: inline-block;
+    padding-right: 40px;
+    color: #7d7d7d;
+    font-size: 14px;
+}
+
+#menu-left {
+    float: left;
+    line-height: 50px;
+}
+
+#menu-left .find-a-gift {
+    position: relative;
+}
+
+#menu-left .find-a-gift:before {
+    position: absolute;
+    font-family: "FontAwesome";
+    content: "\f002";
+    left: 10px;
+    color: #37a000;
+}
+
+#menu-right {
+    float: right;
+    line-height: 50px;
+}
+
+.browse:hover, .works:hover, .sign-up:hover, .log-in:hover {
+    color: green;
+}
+
+#menu-left .from {
+    color: #37a000;
+}
+
+#menu-left .company-name {
+    font-size: 20px;   
+}
+
+li .find-artists {
+    background-color: white;
+    border: 2px solid #e0e0e0;
+    line-height: 30px;
+    cursor: pointer;
+    padding: 5px 40px 5px 30px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+li .find-artists:hover {
+    border: 2px solid #37a000;
+}
+
+li .become-artist {
+    text-decoration: none;
+    border: 2px solid #e0e0e0;
+    color: #37a000;
+    padding: 10px 50px 10px 10px;
+    letter-spacing: 0.1em;
+}
+
+li .become-artist:hover {
+    border: 2px solid green;
+}
+
+/** MAIN CONTENT **/
+
+#main-content {
+    background: url(../img/artists.jpg) no-repeat center;
+    min-height: 600px;
+    opacity: 0.9;
+}
+
+#main-content .row {
+    height: 700px;    
+}
+
+#main-content h1 {
+    font-weight: bold;
+    font-size: 50px;
+    padding-top: 200px;
+}
+
+#main-content h6 {
+    color: grey;
+}
+
+.main-search {
+    padding: 10px 100px 10px 10px; 
+    line-height: 1.5em;
+}
+
+.btn-success {
+    cursor: pointer;
+    line-height: 27px;
+    padding: 10px 30px 10px;
+    background: green;
+    margin: 0 auto;
+    margin-left: -5px;
+    margin-bottom: 2px;
+    border-radius: 0px;
+    border: none;
+}
+
+.category-heading {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: "Ubuntu";
+}
+
+
+#how-it-works {
+    font-family: "Ubuntu";
+    background: #F0F0F0;
+}
+
+#how-it-works h2 {
+    margin-top: 50px;
+    margin-bottom: 70px;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+#how-it-works h3 {
+    color: rgb(73,73,73);
+    font-size: 18px;
+    font-weight: 18px;
+    margin-bottom: 20px;
+}
+
+#how-it-works p {
+    color: rgb(73,73,73);
+    font-size: 14px;
+}
+
+#how-it-works .works-pictures {
+    height: 140px;
+}
+
+#how-it-works img {
+    margin-bottom: 20px;
+}

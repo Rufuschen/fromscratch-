@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,500" rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/styles4.css">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/font-awesome.css">
+
+        <!-- flexbox styling -->
+        <link rel="stylesheet" href="css/flexboxgrid.css">
+
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+        <!--Jquery -->
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                var navOffset = jQuery("nav").offset().top;
+
+                jQuery("nav").wrap('<div class="nav-placeholder"></div>)
+
+                                   jQuery(window).scroll(function(){
+                    var scrollPos = jQuery(window).scrollTop();
+
+                    if (scrollPos >= navOffset) {
+                        jQuery("nav").addClass("fixed");
+                    } else {
+                        jQuery("nav").removeClass("fixed");
+                    }
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <nav>
+            <ul id="menu-left">
+                <li class="company-name"><span class="from">from</span>Scratch<span class="trademark-sign">&reg;</span></li>
+                <li>
+                    <label class="find-a-gift">
+                        <input class="find-artists" placeholder="Find a gift" type="text" maxlength="50">
+                    </label>
+                </li>
+                <li class="browse">BROWSE</li>
+                <li class="works">HOW IT WORKS</li>
+            </ul>
+            <ul id="menu-right">
+                <li class="sign-up"><i class="fa fa-pencil" aria-hidden="true"></i> SIGN UP</li>
+                <li class="log-in"><i class="fa fa-caret-right" aria-hidden="true"></i> LOG IN</li>
+                <li><a href="#" class="become-artist">Become an artist</a></li>
+            </ul>
+        </nav>
+
+        <section id="main-content">
+            <div class="container">
+                <h1>Find the perfect gift</h1>
+                <h6>Join the fastest growing marketplace for curated gifts.</h6>
+                <input class="main-search" placeholder="Looking for something?" type="text" 
+                       maxlength="50">
+                <button class="btn btn-success">Get Started</button>
+            </div>
+        </section>
+
+        <section id="how-it-works">
+            <div class="container">
+                <div class="row center-xs center-sm center-md center-lg">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h2>How it works</h2>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <img src="img/find.svg" class="works-pictures"> 
+                        <h3><u>FIND</u></h3>
+                        <p>Post a job to tell us about your project. We'll quickly match you with the right freelancers.
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <img src="img/hire.svg" class="works-pictures">
+                        <h3><u>HIRE</u></h3>
+                        <p>Browse profiles, reviews, and proposals then interview top candidates. Hire a favorite and begin your project.
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <img src="img/work.svg" class="works-pictures">
+                        <h3><u>WORK</u></h3>
+                        <p>Use the fromScratch platform to chat, share files, and collaborate from your desktop or on the go.
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <img src="img/pay.svg" class="works-pictures">
+                        <h3><u>PAY</u></h3>
+                        <p>Invoicing and payments happen through Upwork. With fromScratch Protection, only pay for work you authorize.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="categories">
+            <div class="container">
+                <div class="row center-xs center-sm center-md center-lg">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 category-heading">
+                        <h2>Work with someone perfect from your team</h2>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-12">
+                        <div class="card-group">
+                            <div class="card">
+                                <div class="card-block">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-block">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-block">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </body>
