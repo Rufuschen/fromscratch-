@@ -1,7 +1,4 @@
-.fixed {
-    position: fixed;
-    top: 0;
-}
+/** NAV BAR **/
 
 nav {
     height: 60px;
@@ -216,7 +213,7 @@ li .become-artist:hover {
     margin-bottom: 20px;
 }
 
-/** categories **/
+/** CATEGORIES **/
 
 #categories .card-group {
     height: 150px;

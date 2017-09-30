@@ -1,3 +1,5 @@
+/** NAV BAR **/
+
 .container {
     margin: 0 auto;    
 }
@@ -51,6 +53,8 @@ nav li a:hover {
 .company-name {
     font-size: 20px;   
 }
+
+/** SIGN UP **/
 
 #credentials {
     min-height: 600px;
