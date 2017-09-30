@@ -1,3 +1,7 @@
+.container {
+    margin: 0 auto;    
+}
+
 nav {
     min-height: 60px;
     font-family: "Montserrat";
@@ -5,13 +9,119 @@ nav {
     cursor: pointer;
 }
 
-nav ul {
+#menu-left {
     list-style: none;
+    float: left;
+    line-height: 50px;
+    margin-left: 100px;
 }
+
+#menu-right {
+    float: right;
+    line-height: 50px;
+    margin-right: 100px;
+}
+
 
 nav li {
     display: inline-block;
     padding-right: 40px;
     color: #7d7d7d;
     font-size: 14px;
+}
+
+nav li a {
+    text-decoration: none !important;
+    color: #7d7d7d;
+}
+
+nav li a:hover {
+    color: #7d7d7d;
+}
+
+#menu-right li a {
+    text-decoration: none !important;
+    color: green;
+}
+
+.from {
+    color: #37a000;
+}
+
+.company-name {
+    font-size: 20px;   
+}
+
+#credentials {
+    min-height: 600px;
+    background: #f2f2f2;
+}
+
+#credentials .row {
+    height: 100px;
+}
+
+#credentials h4{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 0.1em;
+    margin-bottom: 30px;
+}
+
+#credentials .password {
+    margin-top: 20px;
+}
+
+#credentials .form-control {
+    margin: 0 auto;
+    padding: 10px 20px 10px 20px;
+    width: 400px;
+    font-family: "Ubuntu";
+    border-radius: 0px;
+}
+
+#credentials .form-control:hover {
+    border: 2px solid green;
+}
+
+#credentials .checkbox {
+    margin-top: 15px;
+    margin-left: -30px;
+}
+
+.checkbox label {
+    color: black;
+    font-size: 14px;
+}
+
+#credentials .forgot-password h5 {
+    margin-top: 19px;    
+    font-size: 14px;
+    color: #37a000;
+}
+
+.btn-success {
+    border-radius: 0px;
+    background-color: #37a000;
+    width: 400px;
+    margin-top: 20px; 
+}
+
+.no-account {
+    margin-top: 20px;
+    margin-right: -80px;
+}
+
+.no-account h5 {
+    font-size: 12px;
+}
+
+.sign-up {
+    margin-top: 15px;
+    margin-right: 100px;
+    background: white;
+    border: 0.5px solid grey;
+    color: #37a000;
+    padding: 0px 50px 0px 40px;
 }

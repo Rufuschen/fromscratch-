@@ -1,0 +1,150 @@
+nav {
+    height: 60px;
+    font-family: "Montserrat";
+    border-bottom: 0.25px solid #e0e0e0;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style-type: none;
+
+}
+
+nav li {
+    display: inline-block;
+    padding-right: 40px;
+    color: #7d7d7d;
+    font-size: 14px;
+}
+
+nav li a {
+    text-decoration: none !important;
+    color: #7d7d7d;
+}
+
+nav li a:hover {
+    color: #7d7d7d;
+}
+
+nav .browse-sub-menu {
+    position: absolute;
+    z-index: 10;
+    max-width: 200px;
+    background: white;
+    display: none;
+    margin-left: -40px;
+}
+
+nav .browse-sub-menu li{
+    width: 200px;
+    font-size: 15px;
+}
+
+nav .category-sub-menu li {
+    display: none;
+    color: #37a000;
+}
+
+#menu-left li.tap ul {
+    display: block;
+    margin-top: 6px;
+}
+
+#menu-left {
+    float: left;
+    line-height: 50px;
+}
+
+#menu-left .find-a-gift {
+    position: relative;
+}
+
+#menu-left .find-a-gift:before {
+    position: absolute;
+    font-family: "FontAwesome";
+    content: "\f002";
+    left: 10px;
+    color: #37a000;
+}
+
+#menu-right {
+    float: right;
+    line-height: 50px;
+}
+
+.browse:hover, .works:hover, .sign-up:hover, .log-in:hover {
+    color: green;
+}
+
+#menu-left .from {
+    color: #37a000;
+}
+
+#menu-left .company-name {
+    font-size: 20px;   
+}
+
+li .find-artists {
+    background-color: white;
+    border: 2px solid #e0e0e0;
+    line-height: 30px;
+    cursor: pointer;
+    padding: 5px 40px 5px 30px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+li .find-artists:hover {
+    border: 2px solid #37a000;
+}
+
+li .become-artist {
+    text-decoration: none;
+    border: 2px solid #e0e0e0;
+    color: #37a000;
+    padding: 10px 50px 10px 10px;
+    letter-spacing: 0.1em;
+}
+
+li .become-artist:hover {
+    border: 2px solid green;
+}
+
+#heading .jumbotron-fluid {
+    min-height: 350px;
+}
+
+
+.container ul {
+    position: absolute;
+    top: -112px;
+    width: 600px;
+    height: 80px;
+}
+
+.container li  {
+    border-left: 1px solid grey;
+    border-top: 1px solid grey;
+    border-right: 1px solid grey;
+    line-height: 40px;
+    margin: auto;
+    background-color: lightgrey;
+    border-radius: 0px;
+}
+
+.container a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.container .nav-link-active {
+    color: #37a000;
+}
+
+.btn-success {
+    border-radius: 0px;
+    padding: 8px 30px 8px 30px;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    font-size: 14px;
+}

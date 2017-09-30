@@ -50,6 +50,15 @@ nav li {
     font-size: 14px;
 }
 
+nav li a {
+    text-decoration: none !important;
+    color: #7d7d7d;
+}
+
+nav li a:hover {
+    color: #7d7d7d;
+}
+
 #sign-up {
     border: 1px solid black;
     text-align: center;

@@ -3,12 +3,12 @@
     top: 0;
 }
 
-
 nav {
-    min-height: 60px;
+    height: 60px;
     font-family: "Montserrat";
     border-bottom: 0.25px solid #e0e0e0;
     cursor: pointer;
+    font-weight: 400;
 }
 
 nav ul {
@@ -21,6 +21,61 @@ nav li {
     padding-right: 40px;
     color: #7d7d7d;
     font-size: 14px;
+}
+
+nav .browse-sub-menu {
+    position: absolute;
+    z-index: 10;
+    max-width: 200px;
+    background: white;
+    display: none;
+    margin-left: -40px;
+}
+
+nav .browse-sub-menu li{
+    width: 200px;
+    font-size: 15px;
+}
+
+
+.browse-sub-menu .sub-menu-category:hover {
+    border: 3px solid #9fff80;
+    color: #37a000;
+    margin-left: -40px;
+    padding-left: 40px;
+}
+
+.browse-sub-menu .sub-menu-artist:hover {
+    border: 3px solid #9fff80;
+    color: #37a000;
+    margin-left: -40px;
+    padding-left: 40px;   
+}
+
+#menu-left ul ul {
+    left: 100%;
+    top: 0;
+    display: block;
+}
+
+nav .category-sub-menu li {
+    display: none;
+    color: #37a000;
+}
+
+nav li a {
+    text-decoration: none !important;
+    color: grey;
+}
+
+nav li a:hover {
+    color: green;
+}
+
+
+#menu-left li.tap ul {
+    display: block;
+    margin-top: 6px;
 }
 
 #menu-left {
@@ -43,10 +98,6 @@ nav li {
 #menu-right {
     float: right;
     line-height: 50px;
-}
-
-.browse:hover, .works:hover, .sign-up:hover, .log-in:hover {
-    color: green;
 }
 
 #menu-left .from {
@@ -81,7 +132,11 @@ li .become-artist {
 
 li .become-artist:hover {
     border: 2px solid green;
+    padding: 10px 62.6px 10px 22.5px;
+    transition: 0.5s;
+    font-size: 16px;
 }
+
 
 /** MAIN CONTENT **/
 
@@ -129,8 +184,7 @@ li .become-artist:hover {
 }
 
 
-#how-it-works {
-    font-family: "Ubuntu";
+#how-it-works {    
     background: #F0F0F0;
 }
 
@@ -160,4 +214,40 @@ li .become-artist:hover {
 
 #how-it-works img {
     margin-bottom: 20px;
+}
+
+/** categories **/
+
+#categories .card-group {
+    height: 150px;
+}
+
+#categories img {
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+#categories .category-button {
+    margin-top: 20px;
+}
+
+#categories .btn-primary {
+    border-radius: 0px;
+    font-size: 14px;
+    border: 1px solid grey;
+    background: white;
+    color: #37a000;
+    cursor: pointer;
+    padding: 8px 25px 8px 25px;
+    margin-bottom: 100px;
+
+}
+
+#categories .btn-primary:hover {
+    border: 2px solid darkgreen;
+}
+
+#next-section {
+    min-height: 600px;
+    border-top: 1px solid black
 }

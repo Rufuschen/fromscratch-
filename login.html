@@ -4,6 +4,7 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
@@ -11,6 +12,7 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        
         <!-- Custom CSS -->
         <link rel="stylesheet" href="css/login.css">
 
@@ -30,11 +32,69 @@
     </head>
     <body>
         <nav>
-            <ul>
-                <li class="company-name"><span class="from">from</span>Scratch<span class="trademark-sign">&reg;</span></li>
+            <ul id="menu-left">
+                <li class="company-name"><a href="main.html"><span class="from">from</span>Scratch</a><span class="trademark-sign">&reg;</span></li>
+            </ul>
+            <ul id="menu-right">
+                <li class="account">Don't have an account? <span class="log-in"><a href="signup.html">Sign up</a></span></li>
             </ul>
         </nav>
-        
-        
+
+        <section id="credentials">
+            <div class="container">
+                <div class="row center-xs center-md center-sm center-lg">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h4>Log in and get to work</h4>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <input class="form-control" type="text" placeholder="Username or Email" />
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 password">
+                        <input class="form-control" type="text" placeholder="Password" />
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value=""> Remember Me
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 forgot-password">
+                        <h5>Forgot Password?</h5>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 forgot-password">
+                        <button class="btn btn-success">Log In</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

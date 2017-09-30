@@ -24,23 +24,15 @@
         <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
         <!--Jquery -->
-        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="crossorigin="anonymous"></script>
-        <script>
-            $(document).ready(function(){
-                var navOffset = jQuery("nav").offset().top;
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript">
 
-                jQuery("nav").wrap('<div class="nav-placeholder"></div>)
-
-                                   jQuery(window).scroll(function(){
-                    var scrollPos = jQuery(window).scrollTop();
-
-                    if (scrollPos >= navOffset) {
-                        jQuery("nav").addClass("fixed");
-                    } else {
-                        jQuery("nav").removeClass("fixed");
-                    }
+            $(document).ready(function(e){
+                $('.browse').click(function(){
+                    $(this).toggleClass('tap'); 
                 });
             });
+
         </script>
     </head>
 
@@ -49,16 +41,32 @@
             <ul id="menu-left">
                 <li class="company-name"><span class="from">from</span>Scratch<span class="trademark-sign">&reg;</span></li>
                 <li>
-                    <label class="find-a-gift">
-                        <input class="find-artists" placeholder="Find a gift" type="text" maxlength="50">
-                    </label>
+                   <!-- PHP server side
+                    <form action="index.php" method="post">
+                       -->
+                        <label class="find-a-gift">
+                            <input class="find-artists" placeholder="Find a gift" type="text" name="search" maxlength="50">
+                        </label>
+                    <!-- PHP server side  
+                    </form>
+                    -->
                 </li>
-                <li class="browse">BROWSE</li>
-                <li class="works">HOW IT WORKS</li>
+                <li class="browse">BROWSE <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    <ul class="browse-sub-menu">
+                        <li class="sub-menu-category">Categories <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            <ul class="category-sub-menu">
+                                <li class="sub-menu-digital-art">Digital Art</li>
+                                <li class="sub-menu-apparel">Apparel</li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu-artist">Artists <i class="fa fa-angle-down" aria-hidden="true"></i></li>
+                    </ul>
+                </li>
+                <li class="works"><a href="howitworks.html"> HOW IT WORKS</a></li>
             </ul>
             <ul id="menu-right">
-                <li class="sign-up"><i class="fa fa-pencil" aria-hidden="true"></i> SIGN UP</li>
-                <li class="log-in"><i class="fa fa-caret-right" aria-hidden="true"></i> LOG IN</li>
+                <li class="sign-up"><i class="fa fa-pencil" aria-hidden="true"></i><a href="signup.html"> SIGN UP</a></li>
+                <li class="log-in"><i class="fa fa-caret-right" aria-hidden="true"></i><a href="login.html"> LOG IN</a></li>
                 <li><a href="#" class="become-artist">Become an artist</a></li>
             </ul>
         </nav>
@@ -87,8 +95,8 @@
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
                         <img src="img/hire.svg" class="works-pictures">
-                        <h3><u>HIRE</u></h3>
-                        <p>Browse profiles, reviews, and proposals then interview top candidates. Hire a favorite and begin your project.
+                        <h3><u>SELECT</u></h3>
+                        <p>Browse profiles, reviews, and proposals then interview top artists. Choose your favorite and collaborate with them .
                         </p>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
@@ -113,34 +121,72 @@
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 category-heading">
                         <h2>Work with someone perfect from your team</h2>
                     </div>
-                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-12">
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-10">
                         <div class="card-group">
                             <div class="card">
                                 <div class="card-block">
-                                    <h4 class="card-title">Card title</h4>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    <img class="canvas" src="img/cupcake.png">
+                                    <h6 class="card-title">Category 1</h6>
+                                    <p class="card-text"></p>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-block">
-                                    <h4 class="card-title">Card title</h4>
-                                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    <img class="canvas" src="img/fries.png">
+                                    <h6 class="card-title">Category 2</h6>
+                                    <p class="card-text"></p>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-block">
-                                    <h4 class="card-title">Card title</h4>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    <img class="canvas" src="img/ice-cream.png">
+                                    <h6 class="card-title">Category 3</h6>
+                                    <p class="card-text"></p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- Card row 2 -->
+                <div class="row center-xs center-sm center-md center-lg">
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-10">
+                        <div class="card-group">
+                            <div class="card">
+                                <div class="card-block">
+                                    <img class="canvas" src="img/noodles.png">
+                                    <h6 class="card-title">Category 4</h6>
+                                    <p class="card-text"></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-block">
+                                    <img class="canvas" src="img/soft-drink.png">
+                                    <h6 class="card-title">Category 5</h6>
+                                    <p class="card-text"></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-block">
+                                    <img class="canvas" src="img/hamburger.png">
+                                    <h6 class="card-title">Category 6</h6>
+                                    <p class="card-text"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row center-xs center-sm center-md center-lg">
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2 category-button">
+                        <button class="btn btn-primary">See All Categories</button>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <section id="next-section">
+
 
         </section>
 
     </body>
+</html>
