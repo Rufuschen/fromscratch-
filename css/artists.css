@@ -1,0 +1,287 @@
+/** NAV **/ 
+
+nav {
+    height: 60px;
+    font-family: "Lato";
+    border-bottom: 0.25px solid #e0e0e0;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+nav ul {
+    list-style-type: none;
+
+}
+
+nav li {
+    display: inline-block;
+    padding-right: 40px;
+    color: #7d7d7d;
+    font-size: 14px;
+}
+
+nav .browse-sub-menu {
+    position: absolute;
+    z-index: 10;
+    max-width: 200px;
+    background: white;
+    display: none;
+    margin-left: -40px;
+}
+
+nav .browse-sub-menu li{
+    width: 200px;
+    font-size: 15px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.browse-sub-menu .sub-menu-category:hover {
+    border: 3px solid #4D20C8;
+    margin-left: -40px;
+    padding-left: 40px;
+}
+
+.browse-sub-menu .sub-menu-artist:hover {
+    border: 5px solid #4D20C8;
+    margin-left: -40px;
+    padding-left: 40px;   
+}
+
+#menu-left ul ul {
+    left: 100%;
+    top: 0;
+    display: block;
+}
+
+nav .category-sub-menu li {
+    display: none;
+    color: #37a000;
+}
+
+nav li a {
+    text-decoration: none !important;
+    color: grey;
+}
+
+nav li a:hover {
+    color: #4D20C8;
+}
+
+#menu-left li.tap ul {
+    display: block;
+    margin-top: 6px;
+}
+
+#menu-left {
+    float: left;
+    line-height: 50px;
+}
+
+#menu-left .find-a-gift {
+    position: relative;
+}
+
+#menu-left .find-a-gift:before {
+    position: absolute;
+    font-family: "FontAwesome";
+    content: "\f002";
+    left: 10px;
+    color: #4D20C8;
+}
+
+#menu-right {
+    float: right;
+    line-height: 50px;
+}
+
+#menu-left .from {
+    color: #4D20C8;
+}
+
+#menu-left .company-name {
+    font-size: 20px;   
+}
+
+li .find-artists {
+    background-color: white;
+    border: 4px solid #4D20C8;
+    line-height: 30px;
+    cursor: pointer;
+    padding: 5px 40px 5px 30px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+li .find-artists:hover {
+    border: 2px solid #4D20C8;
+}
+
+li .become-artist {
+    background: #4D20C8;
+    text-decoration: none;
+    text-align: center;
+    border: 0px solid #e0e0e0;
+    color: white;
+    padding: 15px;
+    letter-spacing: 0.1em;
+}
+
+li .become-artist:hover {
+    border: 4px solid #4D20C8;
+    background: white;
+    padding: 10px;
+    transition: 0.2s ease-in-out;
+    font-size: 16px;
+}
+
+
+.section-heading {
+    color:#4D20C8;
+    border-bottom: 1px dotted black;
+    margin-left: 30px;
+}
+
+.controls-top {
+    text-align: center;
+    font-size: 40px;
+}
+
+.fa-chevron-right, .fa-chevron-left {
+    color: #4D20C8;
+}
+
+.row {
+    margin: 0 auto;
+}
+
+.col-lg-1 {
+    margin: 25px;
+}
+
+.col-lg-1 h4 {
+    margin-top: 20px;
+    min-width: 100%;
+    text-align: center;
+}
+
+.card-body p {
+    margin-top: 20px;
+    width: 175px;
+}
+
+.testimonial {
+    margin-left: 50px;
+}
+
+.testimonial-card {
+    width: 100px;
+    height: 100px;
+}
+
+.testimonial-card img {
+    width: 100px;
+    height: 100px;
+}
+
+.fa-star, .fa-star-half-full {
+    color: gold;
+}
+
+#view-profile, #view-profile2, #view-profile3, #view-profile4, #view-profile5, #view-profile6, #view-profile7 {
+    min-height: 60px;
+    width: 120px;
+    border: none;
+    background: #4d20c8;
+    border: 4px solid black;
+    cursor: pointer;
+}
+
+.most-works {
+    height: 1000px;
+}
+
+.modal-header h5 {
+    color: #4d20c8;
+    font-size: 40px;
+    margin-right: 100px;
+}
+
+.modal-header .close {
+    position: absolute;
+    left: 470px;
+    top: -1px;
+}
+
+.modal-picture {
+    border-radius: 100px
+}
+
+.modal-body ul {
+    list-style: none;
+}
+
+.modal-body ul li {
+    margin-left: -40px;
+    padding: 5px;
+    
+}
+
+.modal-body ul li .fa {
+    padding-right: 10px;
+}
+
+.fa-paper-plane {
+    margin-left: -3px;
+}
+
+.modal-body .user-info {
+    float: right;
+}
+
+.btn-secondary:hover {
+    background: tomato;
+    border: none;
+}
+
+.top-rated {
+    height: 550px;
+}
+
+
+.more-sections {
+    height: 500px;
+}
+
+
+/** footer **/
+.footer1 {
+    background: #353537;
+}
+
+.footer1 h4 {
+    margin-top: 50px;
+    color: #777777;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+
+.footer1 ul {
+    list-style: none;
+    text-align: left;
+}
+
+.footer1 li {
+    color: #dddddd;
+    display: block;
+    padding: 7px 0;
+    margin-left: -40px;
+    font-size: 12px;
+}
+
+.footer1 .fa {
+    padding-right: 10px;
+}
