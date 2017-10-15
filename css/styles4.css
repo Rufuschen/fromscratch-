@@ -3,8 +3,11 @@
   top: 0;
 }
 
-h1 {
+a, p, h1, h2, h3, h4, h5, h6, nav {
   font-family: 'Lato', sans-serif;
+}
+
+h1 {
   font-weight: 300;
   font-size: 50px;
   padding-top: 200px;
@@ -12,7 +15,6 @@ h1 {
 
 h2 {
   color: #4D20C8;
-  font-family: 'Lato', sans-serif;
   margin-top: 50px;
   margin-bottom: 70px;
   font-size: 35px;
@@ -36,8 +38,8 @@ p {
 /** NAV **/ 
 
 nav {
+  padding-top: 3px;
   height: 60px;
-  font-family: "Lato";
   border-bottom: 0.25px solid #e0e0e0;
   cursor: pointer;
   font-weight: 400;
@@ -52,7 +54,7 @@ nav li {
   display: inline-block;
   padding-right: 40px;
   color: #7d7d7d;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 nav .browse-sub-menu {
@@ -146,7 +148,7 @@ li .find-artists {
   line-height: 30px;
   cursor: pointer;
   padding: 5px 40px 5px 30px;
-  font-size: 16px;
+  font-size: 12px;
   text-decoration: none;
 }
 
@@ -169,14 +171,14 @@ li .become-artist:hover {
   background: white;
   padding: 10px;
   transition: 0.2s ease-in-out;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 
 /** MAIN CONTENT **/
 
 #main-content {
-  background: linear-gradient(rgba(77,32,200,.5),rgba(77,32,200,.5)), url(../img/artwork-bg.png);
+  background: url(../img/artwork-bg.png);
   background-size: cover;
   background-position: 0 0;
   background-attachment: fixed;
@@ -552,10 +554,15 @@ li .become-artist:hover {
 }
 
 #how-it-works {    
-  background: #F0F0F0;
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.75)), url("../img/handmade.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
 }
 
 #how-it-works h2 {
+  color: #ED6A7C;
   margin-top: 50px;
   margin-bottom: 70px;
   font-size: 35px;
@@ -564,15 +571,20 @@ li .become-artist:hover {
 }
 
 #how-it-works h3 {
-  color: rgb(73,73,73);
+  color: #ED6A7C;
   font-size: 18px;
   font-weight: 18px;
   margin-bottom: 20px;
 }
 
 #how-it-works p {
-  color: rgb(73,73,73);
-  font-size: 14px;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+#how-it-works u {
+  text-decoration: none;
 }
 
 #how-it-works .works-pictures {
@@ -581,6 +593,52 @@ li .become-artist:hover {
 
 #how-it-works img {
   margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+#how-it-works .btn {
+  background: #ED6A7C;
+  border-radius: 0px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 20px;
+  padding: 15px;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  transition: 0.2s ease-in-out;
+}
+
+#how-it-works a {
+  color: #fff;
+}
+
+#how-it-works a:hover {
+  color: #ED6A7C;
+}
+
+#how-it-works .btn:hover {
+  background: transparent;
+  border: 4px solid #ED6A7C;
+  color: #ED6A7C;
+}
+
+/** map **/
+
+#map {
+  background: #FFD25A;
+}
+
+#map .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+#map h2 {
+  text-align: center;
 }
 
 /** categories **/
@@ -616,5 +674,27 @@ li .become-artist:hover {
 
 #next-section {
   min-height: 600px;
-  border-top: 1px solid black
+  border-top: 1px solid black;
 }
+
+#footer {
+  background: #4D20C8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright {
+  justify-content: center;
+  text-align: center;
+}
+
+/*#footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}*/
+
+/*#footer .container .copyright p {
+  text-align: center;
+}*/
