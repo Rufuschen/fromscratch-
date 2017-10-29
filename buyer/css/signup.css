@@ -1,0 +1,129 @@
+/** NAV BAR **/
+
+.container {
+    margin: 0;
+}
+
+#menu-left {
+    float: left;
+    line-height: 50px;
+    margin-left: 100px;
+}
+
+#menu-left .from {
+    color: #37a000;
+}
+
+#menu-left .company-name {
+    font-size: 20px;   
+}
+
+#menu-right {
+    float: right;
+    line-height: 50px;
+    margin-right: 100px;
+    font-size: 20px;
+}
+
+#menu-right a {
+    text-decoration: none;
+    color: green;
+}
+
+#menu-right a:click {
+    color: green;
+}
+
+nav {
+    min-height: 60px;
+    font-family: "Montserrat";
+    border-bottom: 0.25px solid #e0e0e0;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    padding-right: 40px;
+    color: #7d7d7d;
+    font-size: 14px;
+}
+
+nav li a {
+    text-decoration: none !important;
+    color: #7d7d7d;
+}
+
+nav li a:hover {
+    color: #7d7d7d;
+}
+
+/** SIGN UP FORM **/
+
+#sign-up {
+    border: 1px solid black;
+    text-align: center;
+    height: 400px;
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+#sign-up h3 {
+    margin-top: 50px;
+}
+
+#sign-up .form-control {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 180px;
+    border-radius: 0px;
+    padding-left: 50px;
+}
+
+#sign-up .form-control:hover {
+    border: 2px solid green;
+}
+
+#sign-up .form-control-email {
+    width: 382px;
+    margin-top: 20px;
+    line-height: 30px;
+    margin-left: 12px;
+    padding: 0px 0px 0px 50px
+}
+
+#sign-up .form-control-email:hover {
+    border: 2px solid green;
+}
+
+.btn-success {
+    margin-top: 50px;
+    border-radius: 0px;
+    background-color: green;
+    padding: 10px 50px 10px 50px;
+}
+
+
+.user-last:before {
+    font-family: "FontAwesome";
+    content: "\f2c0";
+    position: absolute;
+    top: 55px;
+    left: 20px;
+}
+
+.email {
+    position: relative;
+}
+
+.email:before {
+    position: absolute;
+    font-family: "FontAwesome";
+    content: "\f003";
+    top: 25px;
+    left: 30px
+}

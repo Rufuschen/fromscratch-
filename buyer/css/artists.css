@@ -1,0 +1,239 @@
+/** NAV **/ 
+
+body {
+    font-family: "Montserrat";  
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    height: 70px;
+    font-family: "Montserrat";    
+}
+
+nav li a {
+    color: #7d7d7d;
+    font-size: 12px;
+}
+
+nav li a:hover {
+    color: #4D20C8;
+    background: none;
+}
+
+.left-nav {
+    margin-left: 300px;
+}
+
+.right {
+    margin-right: 40px;
+}
+
+.brand-logo {
+    color: black;
+}
+
+.from {
+    color: #4d20c8;
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+.scratch {
+    color: #7d7d7d;
+    font-size: 25px;
+}
+
+ul .dropdown-content {
+    margin-top: 60px;
+}
+
+.dropdown-content li a { 
+    font-size: 12px;
+    color: #7d7d7d;
+}
+
+.dropdown-content li a:hover {
+    background-color: #4d20c8;
+    color: white;
+}
+
+li .become-artist {
+    background: #4d20c8;
+    border-radius: 30px;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 40px;
+    margin-top: 13px;
+}
+
+li .become-artist:hover {
+    border: 2px solid black;
+    color: black;
+}
+
+.btn {
+    background: orange;
+}
+
+.btn:hover {
+    background: #4d20c8;
+}
+
+
+.btn-primary {
+    font-size: 12px;
+    margin-right: 20px;
+    background: #4d20c8;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: none;
+    color: black;
+    border: 3px solid black;
+}
+
+.title {
+    color: tomato;
+    font-weight: 800;
+}
+
+.spacing {
+    padding-top: 
+}
+
+.section-heading {
+    color:#4D20C8;
+    border-bottom: 1px dotted black;
+    margin-left: 30px;
+}
+
+.controls-top {
+    text-align: center;
+    font-size: 40px;
+}
+
+.fa-chevron-right, .fa-chevron-left {
+    color: #4D20C8;
+}
+
+.modal-content img {
+    height: 50px;
+}
+
+.modal-content .header {
+    height: 50px;
+}
+
+.modal-content .icons {
+    margin-left: 200px;
+    position: absolute;
+    top: 20px;
+    left: 130px;
+    padding: 10px;
+}
+
+.modal-content .fa {
+    margin-left: 10px;
+}
+
+.fa-facebook-official:hover {
+   color: #3b5998;
+}
+
+.fa-google-plus:hover {
+    color: #d34836;
+}
+
+.fa-twitter:hover {
+    color: #1da1f2;
+}
+
+.fa-linkedin:hover {
+    color: #0077b5;
+}
+
+.fa-dribbble:hover {
+    color: #ea4c89;
+}
+
+.full-profile {
+    margin-bottom: 60px;
+    margin-left: 55px;
+    font-size: 12px;
+    background: #4d20c8;
+    color: white;
+    border-radius: 10px;
+}
+
+.full-profile a {
+    color: white;
+}
+
+.full-profile:hover {
+    background: orange;
+}
+
+
+.modal-content .name {
+    font-size: 18px;
+    line-height: 25px; 
+    margin-left: 250px;
+}
+
+.modal-work img {
+    height: 150px;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+
+.modal-footer .btn:hover {
+    background: red;
+}
+.modal .modal-footer .btn {
+    margin: 6px 6px;
+    background: #4d20c8;
+}
+
+#modal-robin .icons, #modal-owen .icons {
+    margin-left: 180px;
+}
+
+#modal-robin .full-profile, #modal-owen .full-profile {
+    margin-left: 100px;
+    
+}
+
+
+
+/** footer **/
+.footer1 {
+    background: #353537;
+}
+
+.footer1 h4 {
+    margin-top: 50px;
+    color: #777777;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+
+.footer1 ul {
+    list-style: none;
+    text-align: left;
+}
+
+.footer1 li {
+    color: #dddddd;
+    display: block;
+    padding: 7px 0;
+    font-size: 12px;
+}
+
+.footer1 .fa {
+    padding-right: 10px;
+}

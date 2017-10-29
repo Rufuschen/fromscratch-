@@ -1,0 +1,222 @@
+nav {
+    height: 70px;
+    font-family: "Montserrat";  
+    border-bottom: 1px solid black;    
+}
+
+nav li a {
+    color: #7d7d7d;
+    font-size: 12px;
+}
+
+nav li a:hover {
+    color: #4D20C8;
+    background: none;
+}
+
+.left-nav {
+    margin-left: 300px;
+}
+
+.right {
+    margin-right: 40px;
+}
+
+.brand-logo {
+    color: black;
+}
+
+.from {
+    color: #4d20c8;
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+.scratch {
+    color: #7d7d7d;
+    font-size: 25px;
+}
+
+ul .dropdown-content {
+    margin-top: 60px;
+}
+
+.dropdown-content li a { 
+    font-size: 14px;
+    color: #7d7d7d;
+}
+
+.dropdown-content li a:hover {
+    background-color: #4d20c8;
+    color: white;
+}
+
+li .become-artist {
+    background: #4d20c8;
+    border-radius: 30px;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 40px;
+    margin-top: 13px;
+}
+
+li .become-artist:hover {
+    border: 2px solid black;
+    color: black;
+}
+
+.btn {
+    background: orange;
+}
+
+.btn:hover {
+    background: #4d20c8;
+}
+
+.title {
+    color: tomato;
+    font-weight: 800;
+}
+
+.spacing {
+    padding-top: 
+}
+
+
+/** content **/
+
+body {
+    background: #f7f7f7;
+}
+
+.row {
+    margin-top: 20px;
+    background: white;
+}
+
+.user-info-container{
+    margin-top: 20px;
+    text-align: center;
+    border: 1px solid grey;
+    padding: 30px;
+    height: 400px;   
+    border-radius: 10px;
+}
+
+.user-info-container img {
+    height: 80px;
+}
+
+.user-info-container h5 {
+    font-size: 14px;
+}
+
+.user-info-container li {
+    padding-top: 30px;
+}
+
+.user-info-container li:nth-child(4) {
+    margin-top: 40px;
+}
+
+.user-info-container h6 {
+    font-size: 14px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.user-info-container .li-right-side {
+    float: right;
+}
+
+.fa {
+    margin-left: 10px;
+    padding-right: 5px;
+}
+
+.wrapper {
+    float: left;
+}
+
+.left-side-align {
+    margin-left: 10px;
+    float: left;
+    font-weight: 600;
+}
+
+h6 {
+    margin-left: 10px;
+    text-align: left;
+}
+
+.right-side-align {
+    float: right;
+    color: #00698C;
+    cursor: pointer;
+}
+
+
+.user-info-container-2 {
+    margin-top: 20px;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 10px;
+    height: 800px;
+}
+
+.user-info-container-2 li {
+    margin-top: 40px;
+}
+
+
+.line, .line2, .line3 {
+    margin-top: 70px;
+}
+
+h6 {
+    float: left;
+}
+
+.linked-accounts li {
+    margin-top: 20px;
+    line-height: 10px;
+    text-align: left;
+}
+
+.fa-plus {
+    color: #00698C;
+}
+
+
+.active-gigs {
+    border: 1px solid black;
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 10px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.active-gigs h6 {
+    font-weight: 600;
+    border-bottom: 3px solid green;
+}
+
+
+.color {
+    background: #f7f7f7;
+    height: auto;
+}
+
+.color2 {
+    background: #f7f7f7;
+    height: auto;
+}
+
+.material-tooltip {
+    font-size: 13px;
+    margin-left: 30px;
+    max-width: 200px;
+}

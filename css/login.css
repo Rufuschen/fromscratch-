@@ -54,78 +54,99 @@ nav li a:hover {
     font-size: 20px;   
 }
 
-/** SIGN UP **/
-
-#credentials {
-    min-height: 600px;
+body {
+    margin: 0;
+    padding: 0;
     background: #f2f2f2;
 }
 
-#credentials .row {
-    height: 100px;
+#width {
+    background: #f2f2f2;
+    min-height: 600px;
 }
 
-#credentials h4{
-    margin-top: 50px;
-    text-align: center;
-    font-size: 30px;
-    letter-spacing: 0.1em;
-    margin-bottom: 30px;
-}
-
-#credentials .password {
-    margin-top: 20px;
-}
-
-#credentials .form-control {
+#main-wrapper {    
+    width: 500px;
     margin: 0 auto;
-    padding: 10px 20px 10px 20px;
-    width: 400px;
-    font-family: "Ubuntu";
-    border-radius: 0px;
-}
-
-#credentials .form-control:hover {
-    border: 2px solid green;
-}
-
-#credentials .checkbox {
-    margin-top: 15px;
-    margin-left: -30px;
-}
-
-.checkbox label {
-    color: black;
-    font-size: 14px;
-}
-
-#credentials .forgot-password h5 {
-    margin-top: 19px;    
-    font-size: 14px;
-    color: #37a000;
-}
-
-.btn-success {
-    border-radius: 0px;
-    background-color: #37a000;
-    width: 400px;
-    margin-top: 20px; 
-}
-
-.no-account {
-    margin-top: 20px;
-    margin-right: -80px;
-}
-
-.no-account h5 {
-    font-size: 12px;
-}
-
-.sign-up {
-    margin-top: 15px;
-    margin-right: 100px;
     background: white;
-    border: 0.5px solid grey;
-    color: #37a000;
-    padding: 0px 50px 0px 40px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 60px;
+
 }
+
+#main-wrapper h2 {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+
+.myform {
+    width: 450px;
+    margin: 0 auto;
+    height: 400px;
+}
+
+.myform label {
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+
+.myform li {
+    display: inline;
+    list-style-type: none;
+    margin-left: -40px;
+}
+
+.myform ul {
+    margin-bottom: -15px;
+}
+
+
+.myform .forgotpw {
+    float: right;
+    margin-right: 18px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.myform h5 {
+    font-size: 12px;
+    width: 70%;
+}
+
+.inputvalues_1, .inputvalues_3 {
+    width: 430px;
+    margin: 0 auto;
+    padding: 5px;
+    margin-bottom: 15px; 
+}
+
+.inputvalues_2 {
+    width: 430px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.keep-credentials {
+    margin-top: 20px;
+}
+
+.keep-credentials h6 {
+    padding-left: 50px;
+}
+
+#login_btn {
+    margin-top: 20px;
+    background: #27ae60;
+    padding: 5px;
+    background-color: #4D20C8;
+    color: white;
+    width: 96%;
+    font-size: 18px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+

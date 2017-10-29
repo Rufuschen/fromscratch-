@@ -34,36 +34,28 @@
             <ul id="menu-left">
                 <li class="company-name"><span class="from">from</span>Scratch<span class="trademark-sign">&reg;</span></li>
                 <li>
-                    <!-- PHP server side
-<form action="index.php" method="post">
--->
                     <label class="find-a-gift">
                         <input class="find-artists" placeholder="Find a gift" type="text" name="search" maxlength="50">
                     </label>
-                    <!-- PHP server side  
-</form>
--->
                 </li>
-                <li class="browse">BROWSE <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    <ul class="browse-sub-menu">
-                        <li class="sub-menu-category">Fine-Art <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            <ul class="category-sub-menu">
-                                <li class="sub-menu-digital-art">Digital Art</li>
-                                <li class="sub-menu-apparel">Apparel</li>
-                            </ul>
-                        </li>
-                        <li>Apparel <i class="fa fa-angle-down" aria-hidden="true"></i></li>
-                        <li class="sub-menu-seperate"></li>
-                        <li class="sub-menu-artist">Artists <i class="fa fa-angle-down" aria-hidden="true"></i></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">BROWSE
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li class="active"><a href="artists.html"><i class="fa fa-paint-brush" aria-hidden="true"></i>
+                            ARTISTS</a></li>
+                        <li><a href="messages.php"><i class="fa fa-bullseye" aria-hidden="true"></i>
+                            CATEGORIES</a></li>
                     </ul>
                 </li>
                 <li class="works"><a href="howitworks.html"> HOW IT WORKS</a></li>
             </ul>
             <ul id="menu-right">
-                <li class="sign-up"><i class="fa fa-pencil" aria-hidden="true"></i><a href="signup.html"> SIGN UP</a></li>
-                <li class="log-in"><i class="fa fa-caret-right" aria-hidden="true"></i><a href="login.html"> LOG IN</a></li>
-                <li><a href="#" class="become-artist">Become an artist</a></li>
+                <li class="sign-up"><i class="fa fa-pencil" aria-hidden="true"></i><a href="register.php"> SIGN UP</a></li>
+                <li class="log-in"><i class="fa fa-caret-right" aria-hidden="true"></i><a href="index.php"> LOG IN</a></li>
+                <li><a href="index2.php" class="become-artist">ARTISTS</a></li>
             </ul>
+
         </nav>
 
         <section id="main-content">
@@ -177,7 +169,7 @@ maxlength="50">
                     <div class="row cta">
                         <div class="btn"><a href="signup.html">Start Your Own Project</a>
                         </div>
-                </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -185,77 +177,13 @@ maxlength="50">
         <section id="map">
             <div class="container">
                 <h2>Search for artists from any location</h2>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d178512.5934623267!2d-73.90964180536172!3d40.61770313691628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1507997596253" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d178512.5934623267!2d-73.90964180536172!3d40.61770313691628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1507997596253" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
         </section>
-            
-        <!--<section id="categories">
-            <div class="container">
-                <div class="row center-xs center-sm center-md center-lg">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 category-heading">
-                        <h2>Work with someone perfect from your team</h2>
-                    </div>
-                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-10">
-                        <div class="card-group">
-                            <div class="card">
-                                <div class="card-block">
-                                    <img class="canvas" src="img/cupcake.png">
-                                    <h6 class="card-title">Category 1</h6>
-                                    <p class="card-text"></p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-block">
-                                    <img class="canvas" src="img/fries.png">
-                                    <h6 class="card-title">Category 2</h6>
-                                    <p class="card-text"></p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-block">
-                                    <img class="canvas" src="img/ice-cream.png">
-                                    <h6 class="card-title">Category 3</h6>
-                                    <p class="card-text"></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>-->
-                <!-- Card row 2 -->
-                <!--<div class="row center-xs center-sm center-md center-lg">
-                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-10">
-                        <div class="card-group">
-                            <div class="card">
-                                <div class="card-block">
-                                    <img class="canvas" src="img/noodles.png">
-                                    <h6 class="card-title">Category 4</h6>
-                                    <p class="card-text"></p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-block">
-                                    <img class="canvas" src="img/soft-drink.png">
-                                    <h6 class="card-title">Category 5</h6>
-                                    <p class="card-text"></p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-block">
-                                    <img class="canvas" src="img/hamburger.png">
-                                    <h6 class="card-title">Category 6</h6>
-                                    <p class="card-text"></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row center-xs center-sm center-md center-lg">
-                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2 category-button">
-                        <button class="btn btn-primary">See All Categories</button>
-                    </div>
-                </div>
-            </div>
-        </section>-->
+
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     </body>
     <footer style="background: #4D20C8;height: 60px;">
         <div class="container">

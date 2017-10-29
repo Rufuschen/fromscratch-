@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -9,8 +13,12 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Poppins:400,500" rel="stylesheet">
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <!--Import Google Icon Font-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!--Import materialize.css-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
         <!-- Custom CSS -->
         <link rel="stylesheet" href="css/artists.css">
 
@@ -32,452 +40,194 @@
 
     <body>
         <nav>
-            <ul id="menu-left">
-                <li class="company-name"><span class="from">from</span>Scratch<span class="trademark-sign">&reg;</span></li>
-                <li>
-                    <!-- PHP server side
-<form action="index.php" method="post">
--->
-                    <label class="find-a-gift">
-                        <input class="find-artists" placeholder="Find a gift" type="text" name="search" maxlength="50">
-                    </label>
-                    <!-- PHP server side  
-</form>
--->
-                </li>
-                <li class="browse">BROWSE <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    <ul class="browse-sub-menu">
-                        <li class="sub-menu-category">Fine-Art <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            <ul class="category-sub-menu">
-                                <li class="sub-menu-digital-art">Digital Art</li>
-                                <li class="sub-menu-apparel">Apparel</li>
-                            </ul>
-                        </li>
-                        <li>Apparel <i class="fa fa-angle-down" aria-hidden="true"></i></li>
-                        <li class="sub-menu-seperate"></li>
-                        <li class="sub-menu-artist">Artists <i class="fa fa-angle-down" aria-hidden="true"></i></li>
+            <div class="nav-wrapper white">
+                <a href="main.php" class="brand-logo"><span class="from">from</span><span class="scratch">Scratch</span></a>
+                <ul class="left-nav">
+
+                    <!-- Dropdown for browse -->
+                    <ul id="dropdown1" class="dropdown-content">
+                        <li class="active"><a href="artists.html"><i class="fa fa-paint-brush" aria-hidden="true"></i>
+                            ARTISTS</a></li>
+                        <li><a href="categories.html"><i class="fa fa-bullseye" aria-hidden="true"></i>
+                            CATEGORIES</a></li>
                     </ul>
-                </li>
-                <li class="works"><a href="howitworks.html"> HOW IT WORKS</a></li>
-            </ul>
-            <ul id="menu-right">
-                <li class="sign-up"><i class="fa fa-pencil" aria-hidden="true"></i><a href="signup.html"> SIGN UP</a></li>
-                <li class="log-in"><i class="fa fa-caret-right" aria-hidden="true"></i><a href="login.html"> LOG IN</a></li>
-                <li><a href="#" class="become-artist">Become an artist</a></li>
-            </ul>
-        </nav>
+                    <li><a href="#" class="dropdown-button" data-activates="dropdown1">BROWSE<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a href="#">HOW IT WORKS</a></li>
+                </ul>
 
-        <!-- Top Rated -->
-        <section class="top-rated">
-
-            <!--Section heading-->
-            <h1 class="section-heading h1 pt-4">Top-Rated</h1>
-
-            <div class="controls-top">
-                <a class="btn-floating light-blue" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
-                <a class="btn-floating light-blue" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-1 col-md-12 mb-r testimonial">
-
-                    <!-- CARD 1 -->
-                    <div class="card testimonial-card">
-                        <div class="card-up lighten-2">
-                        </div>
-                        <div class="avatar"><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(4).jpg" class="rounded-circle img-responsive">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">John Doe</h4>
-                            <hr>
-                            <i class="fa fa-star"> </i>
-                            <i class="fa fa-star"> </i>
-                            <i class="fa fa-star"> </i>
-                            <i class="fa fa-star"> </i>
-                            <i class="fa fa-star"> </i>
-                            <p><i><i class="fa fa-quote-left"></i> Insert quote.</i></p>
-                        </div>
-                        <button type="button" id="view-profile" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-                            View Profile
-                        </button>
-                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(4).jpg" class="modal-picture">
-                                        <h5 class="modal-title" id="exampleModalLabel">John Doe </h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <ul>
-                                            <li><i class="fa fa-map-marker" aria-hidden="true"></i>From <span class="user-info">United States</span></li>
-                                            <li><i class="fa fa-user" aria-hidden="true"></i>Member since <span class="user-info">January 2017</span></li>
-                                            <li><i class="fa fa-clock-o" aria-hidden="true"></i>Avg. Response Time <span class="user-info">6 Hours</span></li>
-                                            <li><i class="fa fa-paper-plane" aria-hidden="true"></i>Recent Delivery <span class="user-info">2 Days</span></li>
-                                        </ul>
-                                        <hr>
-                                        <h5>Description</h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, ratione reiciendis natus magnam, iusto distinctio nemo provident maxime fuga, dicta velit quam dolorem eum! Dolorum repellendus quod, eaque necessitatibus unde.</p>
-                                        <hr>
-                                        <h5>Skills</h5>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-heart" aria-hidden="true"></i>
-                                        </button>
-                                        <button type="submit" class="btn btn-primary">Message</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <!-- CARD TWO -->
-                <div class="col-lg-1 col-md-12 mb-r testimonial">
-                    <div class="card testimonial-card">
-                        <div class="card-up teal lighten-2">
-                        </div>
-                        <div class="avatar"><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(4).jpg" class="rounded-circle img-responsive">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Ted Knox</h4>
-                            <hr>
-                            <i class="fa fa-star"> </i>
-                            <i class="fa fa-star"> </i>
-                            <i class="fa fa-star"> </i>
-                            <i class="fa fa-star"> </i>
-                            <i class="fa fa-star"> </i>
-                            <p><i><i class="fa fa-quote-left"></i> Insert quote.</i></p>
-                        </div>
-                        <button type="button" id="view-profile2" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
-                            View Profile
-                        </button>
-                        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Ted Knox </h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        ...
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-heart" aria-hidden="true"></i>
-                                        </button>
-                                        <button type="button" class="btn btn-primary">Message</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <!-- CARD THREE -->
-                <div class="col-lg-1 col-md-12 mb-r testimonial">
-                    <div class="card testimonial-card">
-                        <div class="card-up teal lighten-2">
-                        </div>
-                        <div class="avatar"><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(4).jpg" class="rounded-circle img-responsive">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Jordan Merle</h4>
-                            <hr>
-                            <i class="fa fa-star"> </i>
-                            <i class="fa fa-star"> </i>
-                            <i class="fa fa-star"> </i>
-                            <i class="fa fa-star"> </i>
-                            <i class="fa fa-star"> </i>
-                            <p><i><i class="fa fa-quote-left"></i> Insert quote.</i></p>
-                        </div>
-                        <button type="button" id="view-profile3" class="btn btn-primary" data-toggle="modal" data-target="#myModal3">
-                            View Profile
-                        </button>
-                        <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Jordan Merle</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        ...
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-heart" aria-hidden="true"></i>
-                                        </button>
-                                        <button type="button" class="btn btn-primary">Message</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- CARD FOUR -->
-                <div class="col-lg-1 col-md-12 mb-r testimonial">
-                    <div class="card testimonial-card">
-                        <div class="card-up teal lighten-2">
-                        </div>
-                        <div class="avatar"><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(4).jpg" class="rounded-circle img-responsive">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Bradley Bud</h4>
-                            <hr>
-                            <i class="fa fa-star"> </i>
-                            <i class="fa fa-star"> </i>
-                            <i class="fa fa-star"> </i>
-                            <i class="fa fa-star"> </i>
-                            <i class="fa fa-star"> </i>
-                            <p><i><i class="fa fa-quote-left"></i> Insert quote.</i></p>
-                        </div>
-                        <button type="button" id="view-profile4" class="btn btn-primary" data-toggle="modal" data-target="#myModal4">
-                            View Profile
-                        </button>
-                        <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Bradley Bud </h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        ...
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-heart" aria-hidden="true"></i>
-                                        </button>
-                                        <button type="button" class="btn btn-primary">Message</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- CARD FIVE -->
-                <div class="col-lg-1 col-md-12 mb-r testimonial">
-                    <div class="card testimonial-card">
-                        <div class="card-up teal lighten-2">
-                        </div>
-                        <div class="avatar"><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(4).jpg" class="rounded-circle img-responsive">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Derby Shawn</h4>
-                            <hr>
-                            <i class="fa fa-star"> </i>
-                            <i class="fa fa-star"> </i>
-                            <i class="fa fa-star"> </i>
-                            <i class="fa fa-star"> </i>
-                            <i class="fa fa-star"> </i>
-                            <p><i><i class="fa fa-quote-left"></i> Insert quote.</i></p>
-                        </div>
-                        <button type="button" id="view-profile5" class="btn btn-primary" data-toggle="modal" data-target="#myModal5">
-                            View Profile
-                        </button>
-                        <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Derby Shawn</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        ...
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-heart" aria-hidden="true"></i>
-                                        </button>
-                                        <button type="button" class="btn btn-primary">Message</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <!-- CARD SIX -->
-                <div class="col-lg-1 col-md-12 mb-r testimonial">
-                    <div class="card testimonial-card">
-                        <div class="card-up teal lighten-2">
-                        </div>
-                        <div class="avatar"><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(4).jpg" class="rounded-circle img-responsive">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Jess Murphy</h4>
-                            <hr>
-                            <i class="fa fa-star"> </i>
-                            <i class="fa fa-star"> </i>
-                            <i class="fa fa-star"> </i>
-                            <i class="fa fa-star"> </i>
-                            <i class="fa fa-star"> </i>
-                            <p><i><i class="fa fa-quote-left"></i> Insert quote.</i></p>
-                        </div>
-                        <button type="button" id="view-profile6" class="btn btn-primary" data-toggle="modal" data-target="#myModal6">
-                            View Profile
-                        </button>
-                        <div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Jess Murphy </h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        ...
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-heart" aria-hidden="true"></i>
-                                        </button>
-                                        <button type="button" class="btn btn-primary">Message</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- CARD SEVEN -->
-                <div class="col-lg-1 col-md-12 mb-r testimonial">
-                    <div class="card testimonial-card">
-                        <div class="card-up teal lighten-2">
-                        </div>
-                        <div class="avatar"><img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(4).jpg" class="rounded-circle img-responsive">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Jane Doe</h4>
-                            <hr>
-                            <i class="fa fa-star"> </i>
-                            <i class="fa fa-star"> </i>
-                            <i class="fa fa-star"> </i>
-                            <i class="fa fa-star"> </i>
-                            <i class="fa fa-star-half-full"> </i>
-                            <p><i><i class="fa fa-quote-left"></i> Insert quote.</i></p>
-                        </div>
-                        <button type="button" id="view-profile7" class="btn btn-primary" data-toggle="modal" data-target="#myModal7">
-                            View Profile
-                        </button>
-                        <div class="modal fade" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Jane Doe</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        ...
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-heart" aria-hidden="true"></i>
-                                        </button>
-                                        <button type="button" class="btn btn-primary">Message</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="more-sections">
-            <h2 style = "text-align: center">Insert More Sections</h2>
-            <div class="wrapper">
-                <h1>Pick a card</h1>
-                <ul class="panels">
-                    <li>
-                        <div class="front" style="background: purple">John Doe
-                        </div>
-                        <div class="back" style="background: pink">Hello
-                            <button type="button" id="view-profile7" class="btn btn-primary" data-toggle="modal" data-target="#myModal7">
-                                View Profile
-                            </button>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="front" style="background: #A8E6CE">
-                            Barney Stinson
-                        </div>
-                        <div class="back" style="background: #FFAAA6"><span class="text">When I am not womanizing and being a legend, I design cool shirts.</span>
-                            <span class="stars">
-                                <i class="fa fa-star"> </i>
-                                <i class="fa fa-star"> </i>
-                                <i class="fa fa-star"> </i>
-                                <i class="fa fa-star"> </i>
-                                <i class="fa fa-star-half-full"> </i>
-                            </span>
-                            <span class="quote">
-                                <p><i><i class="fa fa-quote-left"></i> After having read Barney's book, My friends have commented that I am a true bro.</i></p>
-                            </span>
-                            <button type="button" id="view-profile7" class="btn btn-primary-1" data-toggle="modal" data-target="#myModal7">
-                                View Profile
-                            </button>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="front" style="background: green">Ted Mosby</div>
-                        <div class="back" style="background: #2F9599"><span class="text-mosby">
-                            You either love me or hate me. I owe a yellow umbrella.
-                            </span>
-                            <span class="stars">
-                                <i class="fa fa-star"> </i>
-                            </span>
-                            <span class="quote">
-                                <p><i><i class="fa fa-quote-left"></i> This guy is really weird. He constantly bragged to me about stealing a blue french horn from a restaurant and never getting caught, and kept going on and on about finding his 'true love'.</i></p>
-                            </span>
-                            <button type="button" id="view-profile7" class="btn btn-primary-1" data-toggle="modal" data-target="#myModal7">
-                                View Profile
-                            </button></div>
-                    </li>
-                    <li>
-                        <div class="front" style="background: brown">Frodo Baggins</div>
-                        <div class="back" style="background: #363636">
-                            <span class="text">
-                                I take meds so I stop hallucinating about having a powerful ring.
-                            </span>
-                            <span class="stars">
-                                <i class="fa fa-star"> </i>
-                                <i class="fa fa-star"> </i>
-                                <i class="fa fa-star"> </i>
-                                <i class="fa fa-star"> </i>
-                                <i class="fa fa-star-half-full"> </i>
-                            </span>
-                            <span class="quote">
-                                <p><i><i class="fa fa-quote-left"></i> Frodo kept addressing me as 'precious' but his work is of top quality. His gardener Sam cooks a good rabbit stew.</i></p>
-                            </span>
-                            <button type="button" id="view-profile7" class="btn btn-primary-1" data-toggle="modal" data-target="#myModal7">
-                                View Profile
-                            </button>
-                        </div>
-                    </li>
+                <!-- Right side -->
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="register.php"><i class="fa fa-pencil" aria-hidden="true"></i> SIGN UP</a></li>
+                    <li><a href="index.php"><i class="fa fa-caret-right" aria-hidden="true"></i> LOG IN</a></li> 
+                    <li><a href="#" class="become-artist">Become an artist</a></li>    
                 </ul>
             </div>
-        </section>
+        </nav>
 
+        <div class="container">
+            <h1 class="center-align">Our Artists</h1>
+            <input type="text" id="filterInput" placeholder="Search artists...">
+            <ul id="artists" class="collection with-header">
+                <li class="collection-item">
+                    <a href="#">
+                        Dakota Malone</a>
+                    <a href="#!" class="secondary-content tooltipped" data-position="top" data-tooltip="Top 1% of artists"><i class="material-icons">grade</i></a>
+                </li>
+                <li class="collection-item">
+                    <a href="#">
+                        Meredith Murray</a>
+                </li>
+                <li class="collection-item">
+                    <a href="#">Colin Webster</a>
+                </li>
+                <li class="collection-item">
+                    <a href="#">Grier Purdie</a>
+                </li>
+                <li class="collection-item">
+                    <a href="#">
+                        Roydon Keefe</a>
+                </li>
+                <li class="collection-item">
+                    <a href="#" data-target="modal-robin" class="modal-trigger">Robin Darrell</a>
+                    <!-- Modal -->
+                    <div id="modal-robin" class="modal modal-fixed-footer">
+                        <div class="modal-content">
+                            <div class="header">
+                                <img class="circle responsive-img" src="img/himawan.jpg" />
+                                <span class="icons">
+                                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    <i class="fa fa-dribbble" aria-hidden="true"></i>
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                </span>
+                                <span class="name"><b>Robin Darrell</b></span>
+                                <span class="full-profile btn"><a href="profile.php">View Full Profile</a></span>
+                            </div>
+                            <hr>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a onclick="Materialize.toast('Saved to Favourites!', 2000)" class="btn"><i class="fa fa-heart" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#!" class="secondary-content tooltipped" data-position="top" data-tooltip="Top 1% of artists"><i class="material-icons">grade</i></a>
+                </li>
+                <li class="collection-item">
+                    <a href="#">Hardy Sefton</a>
+                </li>
+                <li class="collection-item">
+                    <a href="#">Theobald Randal</a>
+                </li>
+                <li class="collection-item">
+                    <a href="#">Wilbur Major</a>
+                </li>
+                <li class="collection-item">
+                    <a href="#">Owen Randolf
 
+                    </a>
+                </li>
+                <li class="collection-item">
+                    <a href="#">Charley Brant</a>
+                </li>
+                <li class="collection-item">
+                    <a href="#">Dan Harrison</a>
+                </li>
+                <li class="collection-item">
+                    <a href="#">Jackie Foster</a>
+                </li>
+                <li class="collection-item">
+                    <a href="#">Cass Hallam</a>
+                </li>
+                <li class="collection-item">
+                    <a href="#">Josh Mortimer</a>
+                </li>
+                <li class="collection-item">
+                    <a href="#">Dwain Ryker</a>
+                </li>
+                <li class="collection-item">
+                    <a href="#">Phoenix Roydon</a>
+                </li>
+                <li class="collection-item">
+                    <a href="#">Elvis Byron</a>
+                </li>
+                <li class="collection-item">
+                    <a href="#">Griffin Kendrick</a>
+                </li>
+                <li class="collection-item">
+                    <a href="#">Tom Rolf</a>
+                </li>
+                <li class="collection-item">
+                    <a href="#">Stanford Merton</a>
+                </li>
+                <li class="collection-item">
+                    <a href="#" data-target="modal2" class="modal-trigger">Teddy Rastus
+                    </a>
+                    <div id="modal2" class="modal modal-fixed-footer">
+                        <div class="modal-content">
+                            <h1>Hello</h1>
+                            <a onclick="Materialize.toast('Saved to Favourites', 2000)" class="btn">Toast</a>
+                            <p>A bunch of text</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="collection-item">
+                    <a href="#" data-target="modal1" class="modal-trigger">Himawan Gunadhi
+                    </a>
+                    <!-- Modal -->
+                    <div id="modal1" class="modal modal-fixed-footer">
+                        <div class="modal-content">
+                            <div class="header">
+                                <img class="circle responsive-img" src="img/himawan.jpg" />
+                                <span class="icons">
+                                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    <i class="fa fa-dribbble" aria-hidden="true"></i>
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                </span>
+                                <span class="name"><b>Himawan Gunadhi</b></span>
+                                <span class="full-profile btn"><a href="profile.php">View Full Profile</a></span>
+                            </div>
+                            <hr>
+                            <div class="modal-description">
+                                <h5><u>Description</u></h5>
+                                <p><i>I moonlight as an artist when I am not 'teaching' entrepreneurship. That explains my crappy teaching. Ha! I joined FromScratch because it has an awesome collaboration process, and I am a firm believer that  creating art should never be a one-way process.</i></p>
+                            </div>
+                            <div class="modal-categories">
+                                <h5><u>Categories</u></h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias libero reprehenderit sapiente voluptatibus perferendis ab accusantium saepe at voluptates laboriosam asperiores nostrum minus, maiores earum tempora error! Modi, ea, voluptatem!</p>
+                            </div>
+                            <div class="modal-work">
+                                <h5><u>Past Work</u></h5>
+                                <table style="width: 100%">
+                                    <tr>
+                                        <td class="past-work">
+                                            <img class="circle responsive-img" src="img/tshirt.png">
+                                        </td>
+                                        <td class="past-work">
+                                            <img class="circle responsive-img" src="img/mug.png">
+                                        </td>
+                                        <td class="past-work">
+                                            <img class="circle responsive-img" src="img/ring.png">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a onclick="Materialize.toast('Saved to Favourites!', 2000)" class="btn"><i class="fa fa-heart" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#!" class="secondary-content tooltipped" data-position="top" data-tooltip="Top 1% of artists"><i class="material-icons">grade</i></a>
+                </li>
+            </ul>
+        </div>
 
 
 
@@ -541,10 +291,42 @@
 
 
 
-        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
         <script>
+            // Get filter list 
+            let filterInput = document.getElementById('filterInput');
+            // Add event listener
+            filterInput.addEventListener('keyup', filterCategories);
+
+            function filterCategories(){
+                //Get value of input
+                let filterValue = document.getElementById('filterInput').value.toUpperCase();
+
+                //Get categories ul
+                let ul = document.getElementById('artists')
+                //Get LIs from ul
+                // change this to ul category
+                let li = ul.querySelectorAll('li.collection-item');
+
+                //loop through collection-header lis
+                for(let i = 0; i < li.length;i++){
+                    let a = li[i].getElementsByTagName('a')[0];
+                    //If match
+                    if(a.innerHTML.toUpperCase().indexOf(filterValue) > -1){
+                        li[i].style.display='';
+
+                    }else {
+                        li[i].style.display='none';
+                    }
+                }
+            }
+
+            $(document).ready(function(){
+                $('.modal').modal();
+            })
+
 
         </script>
 

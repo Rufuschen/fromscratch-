@@ -107,21 +107,6 @@ nav li a:hover {
     padding: 10px 50px 10px 50px;
 }
 
-.user-first {
-    position: relative;
-}
-
-.user-first:before {
-    font-family: "FontAwesome";
-    content: "\f2c0";
-    position: absolute;
-    top: 56px;
-    left: 20px;
-}
-
-.user-last {
-    position: relative;
-}
 
 .user-last:before {
     font-family: "FontAwesome";

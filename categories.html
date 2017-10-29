@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,500" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,500" rel="stylesheet">
+
+        <!--Import Google Icon Font-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!--Import materialize.css-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/categories.css">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/font-awesome.css">
+
+        <!-- flexbox styling -->
+        <link rel="stylesheet" href="css/flexboxgrid.css">
+
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+
+    </head>
+
+    <body>
+        <nav>
+            <div class="nav-wrapper white">
+                <a href="main.php" class="brand-logo"><span class="from">from</span><span class="scratch">Scratch</span></a>
+                <ul class="left-nav">
+
+                    <!-- Dropdown for browse -->
+                    <ul id="dropdown1" class="dropdown-content">
+                        <li class="active"><a href="artists.html"><i class="fa fa-paint-brush" aria-hidden="true"></i>
+                            ARTISTS</a></li>
+                        <li><a href="categories.html"><i class="fa fa-bullseye" aria-hidden="true"></i>
+                            CATEGORIES</a></li>
+                    </ul>
+                    <li><a href="#" class="dropdown-button" data-activates="dropdown1">BROWSE<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a href="#">HOW IT WORKS</a></li>
+                </ul>
+
+                <!-- Right side -->
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="register.php"><i class="fa fa-pencil" aria-hidden="true"></i> SIGN UP</a></li>
+                    <li><a href="index.php"><i class="fa fa-caret-right" aria-hidden="true"></i> LOG IN</a></li> 
+                    <li><a href="#" class="become-artist">Become an artist</a></li>    
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <input type="search" placeholder="What are you looking for?" id="filterInput">
+            <ul id="artists" class="collection with-header">
+                <li class="collection-header"><a href="#">Cufflinks</a></li>
+                <li class="collection-item"><a href="#">Alvin Tan</a></li>
+                <li class="collection-item"><a href="#">Alvin Tan</a></li>
+                <li class="collection-item"><a href="#">Alvin Tan</a></li>
+                <li class="collection-item"><a href="#">Alvin Tan</a></li>
+                <!-- MUGS -->
+                <li class="collection-header"><a href="#">Mugs</a></li>
+                <li class="collection-item"><a href="#">Adam</a></li>
+                <li class="collection-item"><a href="#">Himawan Gunadhi</a></li>
+                <li class="collection-item"><a href="#">Alvin Tan</a></li>
+                <li class="collection-item"><a href="#">Alvin Tan</a></li>
+            </ul>
+        </div>
+
+
+
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+        <script>
+            //Get filter list 
+            let filterInput = document.getElementById('filterInput');
+            // Add event listener
+            filterInput.addEventListener('keyup', filterCategories);
+
+            function filterCategories(){
+                //Get value of input
+                let filterValue = document.getElementById('filterInput').value.toUpperCase();
+
+                //Get categories ul
+                let ul = document.getElementById('artists')
+                //Get LIs from ul
+                // change this to ul category
+                let li = ul.querySelectorAll('li.collection-header');
+
+                //loop through collection-header lis
+                for(let i = 0; i < li.length;i++){
+                    let a = li[i].getElementsByTagName('a')[0];
+                    //If match
+                    if(a.innerHTML.toUpperCase().indexOf(filterValue) > -1){
+                        li[i].style.display='';
+
+                    }else {
+                        li[i].style.display='none';
+                    }
+                }
+            }
+
+
+        </script>
+
+
+
+    </body>
+</html>

@@ -1,142 +1,94 @@
 /** NAV **/ 
 
+body {
+    font-family: "Montserrat";  
+    margin: 0;
+    padding: 0;
+}
+
 nav {
-    height: 60px;
-    font-family: "Lato";
-    border-bottom: 0.25px solid #e0e0e0;
-    cursor: pointer;
-    font-weight: 400;
-}
-
-nav ul {
-    list-style-type: none;
-
-}
-
-nav li {
-    display: inline-block;
-    padding-right: 40px;
-    color: #7d7d7d;
-    font-size: 14px;
-}
-
-nav .browse-sub-menu {
-    position: absolute;
-    z-index: 10;
-    max-width: 200px;
-    background: white;
-    display: none;
-    margin-left: -40px;
-}
-
-nav .browse-sub-menu li{
-    width: 200px;
-    font-size: 15px;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-.browse-sub-menu .sub-menu-category:hover {
-    border: 3px solid #4D20C8;
-    margin-left: -40px;
-    padding-left: 40px;
-}
-
-.browse-sub-menu .sub-menu-artist:hover {
-    border: 5px solid #4D20C8;
-    margin-left: -40px;
-    padding-left: 40px;   
-}
-
-#menu-left ul ul {
-    left: 100%;
-    top: 0;
-    display: block;
-}
-
-nav .category-sub-menu li {
-    display: none;
-    color: #37a000;
+    height: 70px;
+    font-family: "Montserrat";    
 }
 
 nav li a {
-    text-decoration: none !important;
-    color: grey;
+    color: #7d7d7d;
+    font-size: 12px;
 }
 
 nav li a:hover {
     color: #4D20C8;
+    background: none;
 }
 
-#menu-left li.tap ul {
-    display: block;
-    margin-top: 6px;
+.left-nav {
+    margin-left: 300px;
 }
 
-#menu-left {
-    float: left;
-    line-height: 50px;
+.right {
+    margin-right: 40px;
 }
 
-#menu-left .find-a-gift {
-    position: relative;
+.brand-logo {
+    color: black;
 }
 
-#menu-left .find-a-gift:before {
-    position: absolute;
-    font-family: "FontAwesome";
-    content: "\f002";
-    left: 10px;
-    color: #4D20C8;
+.from {
+    color: #4d20c8;
+    margin-left: 50px;
+    font-size: 25px;
 }
 
-#menu-right {
-    float: right;
-    line-height: 50px;
+.scratch {
+    color: #7d7d7d;
+    font-size: 25px;
 }
 
-#menu-left .from {
-    color: #4D20C8;
+ul .dropdown-content {
+    margin-top: 60px;
 }
 
-#menu-left .company-name {
-    font-size: 20px;   
+.dropdown-content li a { 
+    font-size: 12px;
+    color: #7d7d7d;
 }
 
-li .find-artists {
-    background-color: white;
-    border: 4px solid #4D20C8;
-    line-height: 30px;
-    cursor: pointer;
-    padding: 5px 40px 5px 30px;
-    font-size: 16px;
-    text-decoration: none;
-}
-
-li .find-artists:hover {
-    border: 2px solid #4D20C8;
+.dropdown-content li a:hover {
+    background-color: #4d20c8;
+    color: white;
 }
 
 li .become-artist {
-    background: #4D20C8;
-    text-decoration: none;
-    text-align: center;
-    border: 0px solid #e0e0e0;
+    background: #4d20c8;
+    border-radius: 30px;
     color: white;
-    padding: 15px;
-    letter-spacing: 0.1em;
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 40px;
+    margin-top: 13px;
 }
 
 li .become-artist:hover {
-    border: 4px solid #4D20C8;
-    background: white;
-    padding: 10px;
-    transition: 0.2s ease-in-out;
-    font-size: 16px;
+    border: 2px solid black;
+    color: black;
 }
 
+.btn {
+    background: orange;
+}
+
+.btn:hover {
+    background: #4d20c8;
+}
+
+.title {
+    color: tomato;
+    font-weight: 800;
+}
+
+.spacing {
+    padding-top: 
+}
 
 .section-heading {
     color:#4D20C8;
@@ -153,106 +105,83 @@ li .become-artist:hover {
     color: #4D20C8;
 }
 
-.row {
-    margin: 0 auto;
+.modal-content img {
+    height: 50px;
 }
 
-.col-lg-1 {
-    margin: 25px;
+.modal-content .header {
+    height: 50px;
 }
 
-.col-lg-1 h4 {
-    margin-top: 20px;
-    min-width: 100%;
-    text-align: center;
-}
-
-.card-body p {
-    margin-top: 20px;
-    width: 175px;
-}
-
-.testimonial {
-    margin-left: 50px;
-}
-
-.testimonial-card {
-    width: 100px;
-    height: 100px;
-}
-
-.testimonial-card img {
-    width: 100px;
-    height: 100px;
-}
-
-.fa-star, .fa-star-half-full {
-    color: gold;
-}
-
-#view-profile, #view-profile2, #view-profile3, #view-profile4, #view-profile5, #view-profile6, #view-profile7 {
-    min-height: 60px;
-    width: 120px;
-    border: none;
-    background: #4d20c8;
-    border: 4px solid black;
-    cursor: pointer;
-}
-
-.most-works {
-    height: 1000px;
-}
-
-.modal-header h5 {
-    color: #4d20c8;
-    font-size: 40px;
-    margin-right: 100px;
-}
-
-.modal-header .close {
+.modal-content .icons {
+    margin-left: 200px;
     position: absolute;
-    left: 470px;
-    top: -1px;
+    top: 20px;
+    left: 130px;
+    padding: 10px;
 }
 
-.modal-picture {
-    border-radius: 100px
+.modal-content .fa {
+    margin-left: 10px;
 }
 
-.modal-body ul {
-    list-style: none;
+.fa-facebook-official:hover {
+   color: #3b5998;
 }
 
-.modal-body ul li {
-    margin-left: -40px;
-    padding: 5px;
-    
+.fa-google-plus:hover {
+    color: #d34836;
 }
 
-.modal-body ul li .fa {
-    padding-right: 10px;
+.fa-twitter:hover {
+    color: #1da1f2;
 }
 
-.fa-paper-plane {
-    margin-left: -3px;
+.fa-linkedin:hover {
+    color: #0077b5;
 }
 
-.modal-body .user-info {
-    float: right;
+.fa-dribbble:hover {
+    color: #ea4c89;
 }
 
-.btn-secondary:hover {
-    background: tomato;
-    border: none;
+.full-profile {
+    margin-bottom: 60px;
+    margin-left: 55px;
+    font-size: 12px;
+    background: #4d20c8;
+    color: white;
+    border-radius: 10px;
 }
 
-.top-rated {
-    height: 550px;
+.full-profile a {
+    color: white;
+}
+
+.full-profile:hover {
+    background: orange;
 }
 
 
-.more-sections {
-    height: 500px;
+.modal-content .name {
+    font-size: 18px;
+    line-height: 25px; 
+    margin-left: 250px;
+}
+
+.modal-work img {
+    height: 150px;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+
+.modal-footer .btn:hover {
+    background: red;
+}
+
+.modal-footer .btn {
+    background: #4d20c8;
 }
 
 
@@ -278,7 +207,6 @@ li .become-artist:hover {
     color: #dddddd;
     display: block;
     padding: 7px 0;
-    margin-left: -40px;
     font-size: 12px;
 }
 

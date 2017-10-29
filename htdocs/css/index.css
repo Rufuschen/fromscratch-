@@ -1,0 +1,124 @@
+/** NAV BAR **/
+
+.container {
+    margin: 0;
+}
+
+#menu-left {
+    float: left;
+    line-height: 50px;
+    margin-left: 100px;
+}
+
+#menu-left .from {
+    color: #37a000;
+}
+
+#menu-left .company-name {
+    font-size: 20px;   
+}
+
+#menu-right {
+    float: right;
+    line-height: 50px;
+    margin-right: 100px;
+    font-size: 20px;
+}
+
+#menu-right a {
+    text-decoration: none;
+    color: green;
+}
+
+#menu-right a:click {
+    color: green;
+}
+
+nav {
+    min-height: 60px;
+    font-family: "Montserrat";
+    border-bottom: 0.25px solid #e0e0e0;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    padding-right: 40px;
+    color: #7d7d7d;
+    font-size: 14px;
+}
+
+nav li a {
+    text-decoration: none !important;
+    color: #7d7d7d;
+}
+
+nav li a:hover {
+    color: #7d7d7d;
+}
+
+body {
+    background-color: #7f8c8d;
+    font-family: "Montserrat";
+}
+
+#main-wrapper {
+    width: 500px;
+    margin: 0 auto;
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid blue;
+    
+}
+
+#main-wrapper h2 {
+    text-align: center;
+}
+
+.myform {
+    width: 450px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.myform label {
+    margin-bottom: 15px;
+}
+
+.inputvalues {
+    width: 430px;
+    margin: 0 auto;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#login_btn {
+    margin-top: 30px;
+    margin-left: 150px;
+    background: #27ae60;
+    padding: 5px;
+    color: white;
+    width: 30%;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+}
+
+#register_btn {
+    margin-top: 20px;
+    margin-left: 150px;
+    background: #3498db;
+    padding: 5px;
+    color: white;
+    width: 30%;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+}
